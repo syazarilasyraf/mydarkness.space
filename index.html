@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+ 
+    <title>mydarkness.space</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+  </head>
+  <body>
+    <main></main>
+    <script>
+    const notionDocId = "6f9469fea10f4010b63811c0487095cc"
+
+fetch("https://potion-api.now.sh/html?id=" + notionDocId)
+  .then(res => res.text())
+  .then(text => {
+    document.querySelector("main").innerHTML = text
+  })
+  </script>
+  </body>
+</html>
